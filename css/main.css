@@ -60,6 +60,7 @@ b {
 
 .btn-white.active, .btn-white:hover {
   background-color: var(--color-primary);
+  color: var(--color-white) !important;
 }
 
 .btn-icon {
@@ -333,60 +334,28 @@ b {
     }
 
     .imagem-depoimento {
-      width: 65px;
-      height: 65px;
+      width: 100%;
+      height: 200px;
       background-color: var(--color-black-heavy);
-      border-radius: 50px;
+      border-radius: 5px;
       background-repeat: no-repeat;
       background-position: center;
       margin-right: 15px;
     }
 
     #depoimento-1 .imagem-depoimento{
-      background-image: url('../img/diego.jpg');
+      background-image: url('../img/slide.png');
       background-size: cover;
     }
     #depoimento-2 .imagem-depoimento{
-      background-image: url('../img/ana.jpg');
+      background-image: url('../img/slide.png');
       background-size: cover;
     }
     #depoimento-3 .imagem-depoimento{
-      background-image: url('../img/joao.jpg');
+      background-image: url('../img/slide.png');
       background-size: cover;
     }
-
-    .nome-depoimento {
-      color: var(--color-black);
-      font-size: 22px;
-      margin-bottom: 5px;
-    }
-
-    .nota-depoimento {
-      color: var(--color-primary);
-    }
-    .nota-depoimento span{
-      color: var(--color-black);
-    }
-
-    .texto-depoimento {
-      display: flex;
-      font-size: 16px;
-      color: var(--color-black);
-    }
-    .texto-depoimento i {
-      font-size: 30px;
-      color: var(--color-primary);
-    }
-    .texto-depoimento i:first-child {
-      padding-left: 10px;
-      padding-right: 35px;
-    }
-    .texto-depoimento i:last-child {
-      padding-left: 45px;
-      display: flex;
-      justify-content: center;
-      align-items: end;
-    }
+ 
 
     /* --------- Reserva ---------- ------*/
 
@@ -423,7 +392,8 @@ b {
     /* --------- FOOTER ---------- ------*/
 
     footer {
-      background-color: var(--color-primary);
+      /* background-color: var(--color-primary); */
+      background-image: linear-gradient(to bottom right, var(--color-primary), var(--color-white));
     }
 
     .logo-footer {
