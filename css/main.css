@@ -82,7 +82,7 @@ b {
  /* --------- banner  ------*/
 .banner{
   padding-top: 110px;
-  padding-bottom: 220px;
+  padding-bottom: 80px;
 }
 
 .text-banner{
@@ -164,27 +164,9 @@ b {
   border: none !important;
 }
 
-.card-case {
-  width: 350px;
-  font-size: 14px;
-  position: absolute;
-  right: 0;
-  bottom: -75px;
-}
-
-.card-case-name {
-  position: absolute;
-  font-size: 12px;
-  color: var(--color-primary);
-  right: 20px;
-  bottom: 10px;
-
-}
-
  /* --------- Serviços  ------*/
  .servicos {
-  padding-top: 80px;
-  padding-bottom: 150px;
+  padding-top: 50px;
  }
 
  .hint-title {
@@ -221,15 +203,6 @@ b {
   color: var(--color-black);
   margin-bottom: 10px;
  }
-
- .background-servicos, .background-depoimentos {
-  position: absolute;
-  left: 0;
-  right: 0;
-  height: 500px;
-  background-image: url('../img/bg-icons-2.png');
- }
-
   /* --------- Cardápio  ------*/
 
   .cardapio {
@@ -334,7 +307,7 @@ b {
     /* --------- Depoimentos ---------- ------*/
 
     .depoimentos {
-      padding-top: 100px;
+      padding-top: 50px;
       padding-bottom: 150px;
     }
 
@@ -342,9 +315,13 @@ b {
       height: 390px;
       width: 390px;
       border-radius: 120px;
-      background-color: var(--color-secondary);
+      background-image: linear-gradient(to bottom right, var(--color-primary), var(--color-white));
       position: absolute;
       left: 0;
+    }
+    .depoimentos .img-sobre img {
+      width: 400px;
+      right: 0px !important;
     }
 
     .container-dados-depoimento {
@@ -358,7 +335,7 @@ b {
     .imagem-depoimento {
       width: 65px;
       height: 65px;
-      background-color: var(--color-white);
+      background-color: var(--color-black-heavy);
       border-radius: 50px;
       background-repeat: no-repeat;
       background-position: center;
