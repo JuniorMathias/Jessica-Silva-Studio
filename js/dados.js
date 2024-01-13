@@ -85,7 +85,7 @@ var MENU = {
             "price": 269
         }
     ],
-    "burgers": [
+    "depilacao": [
         {
             "id": "the-gramercy-tavern-burger-4-pack",
             "img": "./img/cardapio/burguers/Gramercy-Tavern-Burger-and-Kielbasa-Kit-6.4.21-72ppi-1x1-15.jpg",
