@@ -289,15 +289,15 @@ var MENU = {
     ],
     "pizzas": [
         {
-            "id": "2-lou-malnatis-deep-dish-pizzas",
-            "img": "./img/cardapio/pizzas/2-lou-malnatis-deep-dish-pizzas.bf0fe065d251a9cca3925b269d443a27.jpg",
+            "id": "fio-a-fio",
+            "img": "./img/studio/cilios/fioafio.jpg",
             "name": "Lou Malnati's Pizza",
             "dsc": "2 Lou Malnati's Deep Dish Pizzas",
             "price": 67.99
         },
         {
-            "id": "23699-choose-your-own-thin-crust-pizza-4-pack",
-            "img": "./img/cardapio/pizzas/choose-your-own-thin-crust-pizza-4-pack.b928a2008eab50c65dc87e59b5952190.jpg",
+            "id": "alongamento-de-cilios",
+            "img": "./img/studio/cilios/alongamento-de-cilios.jpg",
             "name": "Bartolini's",
             "dsc": "Choose Your Own Thin Crust Pizza - 4 Pack",
             "price": 139
