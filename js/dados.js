@@ -287,7 +287,7 @@ var MENU = {
             "price": 40
         }
     ],
-    "pizzas": [
+    "cilios": [
         {
             "id": "fio-a-fio",
             "img": "./img/studio/cilios/fioafio.jpg",
