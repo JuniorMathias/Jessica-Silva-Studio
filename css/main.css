@@ -204,7 +204,6 @@ b {
   color: var(--color-black);
   margin-bottom: 10px;
  }
-  /* --------- Cardápio  ------*/
 
   .cardapio {
     padding-top: 50px;
@@ -230,7 +229,7 @@ b {
     width: 100%;
     border-radius: 11px;
   }
-  /* --------- mostra quando o nome do card for grande coloca os ...  ------*/
+
   .card-item .title-produto{
     color: var(--color-black);
     text-overflow: ellipsis;

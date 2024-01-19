@@ -10,7 +10,6 @@ var MEU_ENDERECO = null;
 var VALOR_CARRINHO = 0;
 var VALOR_ENTREGA = 5;
 var CELULAR_EMPRESA = '5585991956331';
-var QUEIJAO = 1;
 
 
 cardapio.eventos = {
@@ -509,7 +508,6 @@ cardapio.templates = {
       <div class="dados-produto"> 
         <p class="title-produto" ><b> \${nome}</b></p>
         <p class="price-produto" ><b> R$ \${preco}</b></p>
-        <p class="" ><b> <input type="checkbox" id="queijo-\${id}"> Queijo</input></b></p>
       </div>
       <div class="add-carrinho">
         <span class="btn-menos" onClick="cardapio.metodos.diminuirQuantidadeCarrinho('\${id}')"> <i class="fas fa-minus"> </i></span>
