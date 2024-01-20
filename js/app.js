@@ -394,7 +394,6 @@ cardapio.metodos = {
     cardapio.metodos.finalizarPedido();
 
   },
-  // Atualiza o link do botão do WhatsApp
   finalizarPedido: () => {
     if(MEU_CARRINHO.length > 0 && MEU_ENDERECO != null){
       var texto = 'Olá! gostaria de fazer um pedido:';
@@ -409,11 +408,10 @@ cardapio.metodos = {
 
     $.each(MEU_CARRINHO, (i,e) => {
       itens += `*${e.qntd}x* ${e.name}.......R$ ${e.price.toFixed(2).replace('.',',')} \n`;
-      //último item
+
       if((i + 1) === MEU_CARRINHO.length){
         texto = texto.replace(/\${itens}/g,itens);
 
-        //converter a URL
         let encode = encodeURI(texto);
         let URL = `https://wa.me/${CELULAR_EMPRESA}?text=${encode}`;
 
@@ -422,7 +420,6 @@ cardapio.metodos = {
     })
   },
 
-  //carrega o link de botão reserva
   carregarBotaoReserva: () => {
     var texto = 'Olá! gostaria de fazer uma *reserva:*';
 
@@ -456,10 +453,9 @@ cardapio.metodos = {
     $("#depoimento-" + depoimento).removeClass('hidden');
     $("#btnDepoimento-" + depoimento).addClass('active');
   },
-// mensagem que aparece no alerta aula 23
+
   mensagem: (texto, cor = 'red', tempo = 3500) => {
 
-    //cria um número aleatório e multiplica pela a data atual, id nunca vai se repetir aula 23
     let id = Math.floor(Date.now() * Math.random()).toString();
     
     let msg = ` <div id="msg-${id}" class="animated fadeInDown toast ${cor}">${texto}</div>`;
