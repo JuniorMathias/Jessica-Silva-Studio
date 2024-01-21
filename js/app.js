@@ -284,14 +284,12 @@ cardapio.metodos = {
     var cep = $("#txtCEP").val().trim().replace(/\D/g, '');
 
     if(cep != "") {
-      //expressão regular para validar o cep
       var validacep = /^[0-9]{8}$/;
 
       if(validacep.test(cep)) {
         $.getJSON("http://viacep.com.br/ws/" + cep + "/json/?callback=?", function (dados){
 
           if(!("erro" in dados)) {
-            //Atualizar os campos com os valores retornados
             $("#txtEndereco").val(dados.logradouro);
             $("#txtBairro").val(dados.bairro);
             $("#txtCidade").val(dados.localidade);
@@ -318,7 +316,6 @@ cardapio.metodos = {
     }
   },
 
-  //validação antes de prosseguir para a etapa 3
   resumoPedido: () => {
     var cep = $("#txtCEP").val().trim();
     var endereco = $("#txtEndereco").val().trim()
@@ -373,7 +370,6 @@ cardapio.metodos = {
     cardapio.metodos.carregarResumo();
 
   },
-//carrega a etapa resumo do pedido
   carregarResumo: () => {
 
     $("#listaItensResumo").html("");
