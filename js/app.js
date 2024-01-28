@@ -223,7 +223,6 @@ cardapio.metodos = {
 
   },
 
-  //aula 25 aumentar a quantidade do modal para o carrinho
   aumentarQuantidadeCarrinho: (id) => {
     let qntdAtual = parseInt($("#qntd-carrinho-" + id).text());
     $("#qntd-carrinho-" + id).text(qntdAtual + 1);
@@ -240,13 +239,10 @@ cardapio.metodos = {
     let objIndex = MEU_CARRINHO.findIndex((obj => obj.id == id));
     MEU_CARRINHO[objIndex].qntd = qntd;
 
-    //atualiza o botão carrinho com a quantidade atualizada
     cardapio.metodos.atualizarBadgeTotal();
-    //atualiza os valores totais do carrinho
     cardapio.metodos.carrgarValores();
   },
 
-  // aula 26 carrega os valores do subtotal, entrega e total
   carrgarValores: () => {
     VALOR_CARRINHO = 0;
   
