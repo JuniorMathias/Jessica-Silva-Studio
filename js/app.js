@@ -181,14 +181,12 @@ cardapio.metodos = {
     cardapio.metodos.carregarEtapa(etapa -1);
   },
 
-  //carrega a lista de itens do carrinho no modal aula 25
   carregarCarrinho: () => {
     cardapio.metodos.carregarEtapa(1);
 
     if(MEU_CARRINHO.length > 0){
       $("#itensCarrinho").html('');
 
-      //pega o elemento atual do meu carrinho cria a var e altera de acordo com o q vier no array no template itemCarrinho
       $.each(MEU_CARRINHO, (i, e) => {
         let temp = cardapio.templates.itemCarrinho.replace(/\${img}/g, e.img)
         .replace(/\${nome}/g, e.name)
@@ -197,7 +195,6 @@ cardapio.metodos = {
         .replace(/\${qntd}/g, e.qntd);
 
         $("#itensCarrinho").append(temp);
-        //último item do carrinho aula 26
         if((i+1) == MEU_CARRINHO.length){
           cardapio.metodos.carrgarValores();
         }
@@ -208,7 +205,6 @@ cardapio.metodos = {
       cardapio.metodos.carrgarValores();
     }
   },
-  //aula 25 diminuir a quantidade do modal para o carrinho
   diminuirQuantidadeCarrinho: (id) => {
     let qntdAtual = parseInt($("#qntd-carrinho-" + id).text());
 
