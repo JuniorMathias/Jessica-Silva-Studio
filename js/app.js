@@ -113,7 +113,6 @@ cardapio.metodos = {
     $(".badge-total-carrinho").html(total);
   },
 
-  //abrir modal de carrinho aula 23
   abrirCarrinho: (abrir) => {
     if(abrir){
       $("#modalCarrinho").removeClass('hidden');
@@ -124,7 +123,6 @@ cardapio.metodos = {
 
   },
 
-  // altera os textos e exibe os botões das etapas aula 24 
   carregarEtapa: (etapa) => {
     if(etapa == 1){
       $("#lblTituloEtapa").text('Seu carrinho:');
@@ -174,9 +172,7 @@ cardapio.metodos = {
     }
   },
 
-  //botão de voltar etapas
   voltarEtapa: () => {
-    // essa let etapa vai ver qual .etapa.active está marcado acima e vai ver o tamanho dela aula 24
     let etapa = $(".etapa.active").length;
     cardapio.metodos.carregarEtapa(etapa -1);
   },
