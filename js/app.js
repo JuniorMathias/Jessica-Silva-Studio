@@ -76,7 +76,7 @@ cardapio.metodos = {
 
       let filtro = MENU[categoria];
 
-      let item = $.grep(filtro, (e , i) => { return e.id == id }); // vai percorrer todos os id's e vai pegar somente o que for igual o que passei no id
+      let item = $.grep(filtro, (e , i) => { return e.id == id }); 
       
       if(item.length > 0) {
         let existe = $.grep(MEU_CARRINHO, (elem , index) => { return elem.id == id });
