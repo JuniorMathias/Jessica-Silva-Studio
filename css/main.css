@@ -294,14 +294,13 @@ b {
   }
 
   .card-item:hover .title-produto {
-    display: none;
   }
+
   .card-item:hover .add-carrinho {
     display: flex;
   }
   .card-item:hover .price-produto {
     color: var(--color-black-heavy) !important;
-    margin-top: 20px;
   }
 
     .depoimentos {
